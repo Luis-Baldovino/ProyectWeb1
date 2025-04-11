@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@layer components{
+    .container-page{
+        @apply px-5 md:px-8 py-10 space-y-8 max-w-screen mx-auto;
+    }
+    .text-paragraph{
+        @apply font-outfit text-lg text-stone600;
+    }
+
+    .text-table{
+        @apply py-4 text-Brown800 font-bold;
+    }
+
+    .border-table{
+        @apply border-t border-stone150;
+    }
+}
+
+@theme{
+    
+    --font-outfit: "Outfit", system-ui, Arial, sans-serif;
+    --font-young: "Young Serif", system-ui, Arial, sans-serif;
+    --color-background: hsl(0, 0%, 100%);
+    --color-Rose800: hsl(332, 51%, 32%);
+    --color-Rose50: hsl(330, 100%, 98%);
+    --color-Brown800: hsl(14, 45%, 36%);
+    --color-stone150: hsl(30, 18%, 87%);
+    --color-stone600: hsl(30, 10%, 34%);
+    --color-stone900: hsl(24, 5%, 18%);
+    
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/Outfit-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Outfit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/Outfit-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Outfit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('./assets/fonts/YoungSerif-Regular.woff2') format('woff2'),
+        url('./assets/fonts/YoungSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
